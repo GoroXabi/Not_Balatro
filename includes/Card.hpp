@@ -33,12 +33,13 @@ enum class Seal {
 
 class	Card
 {
-private:
+protected:
 	
 	mlx_texture		*imagen;
 	double			pos_x;
 	double			pos_y;
 	bool			selected;
+	double			price;
 	Enhancements	enhancements = Enhancements::NONE;
 	Editions		editions = Editions::NONE;
 	Seal			seal = Seal::NONE;

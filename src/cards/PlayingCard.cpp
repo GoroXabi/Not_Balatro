@@ -1,18 +1,26 @@
-#include "Area.hpp"
+#include "PlayingCard.hpp"
 
 /*--------------------------------------------------------------*/
 /*							CONSTRUCTORS						*/
 /*--------------------------------------------------------------*/
 
-Area::Area() {
+PlayingCard::PlayingCard() {
 
+}
+
+PlayingCard::PlayingCard(const PlayingCard &model) {
+
+}
+
+PlayingCard &PlayingCard::operator=(const PlayingCard &model) {
+	return (*this);
 }
 
 /*--------------------------------------------------------------*/
 /*							DESTRUCTORS							*/
 /*--------------------------------------------------------------*/
 
-Area::~Area() {
+PlayingCard::~PlayingCard() {
 
 }
 
@@ -20,17 +28,3 @@ Area::~Area() {
 /*						PUBLIC_FUNCTIONS						*/
 /*--------------------------------------------------------------*/
 
-void    Area::removeCard() {
-    std::list<Card>::iterator it = cards.begin();
-    for (size_t times = 0; times < current_idx; times++)
-        it++;
-    cards.erase(it);
-}
-
-void    Area::addCard(Card &new_card) {
-    cards.push_back(new_card);
-}
-
-void    Area::selectCard() {
-    
-}

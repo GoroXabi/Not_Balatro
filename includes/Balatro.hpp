@@ -3,7 +3,9 @@
 
 
 #include "../MLX42/include/MLX42/MLX42.h"
-#include "list"
+#include <list>
+#include <map>
+#include <utility>
 #include "Card.hpp" 
 #include "Area.hpp" 
 
