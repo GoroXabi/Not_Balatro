@@ -27,7 +27,7 @@ private:
 	int											money;
 	std::list<Card> 							deck;
 	std::map<PokerHands, std::pair<int, int> >	handValues;
-	//vouchers
+	
 
 public:
 

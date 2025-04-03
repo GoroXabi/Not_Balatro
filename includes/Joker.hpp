@@ -1,9 +1,10 @@
 #ifndef JOKER_HPP
 #define JOKER_HPP
 
+#include "Balatro.hpp"
 #include <iostream>
 
-class	Joker
+class	Joker: public Card
 {
 private:
 
@@ -17,10 +18,12 @@ public:
 
 /*--------------------DESTRUCTORS--------------------*/
 
-	~Joker();
+	virtual ~Joker();
 
 /*-----------------PUBLIC_FUNCTIONS------------------*/
 
 };
+
+class BluePrint: public Joker {	void effect(); };
 
 #endif
